@@ -1,0 +1,263 @@
+header {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  header .title {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .title h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 5rem; }
+  header .desc {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    max-width: 700px; }
+  header .buttons {
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem; }
+    header .buttons .grey {
+      background-color: #3c424f; }
+    header .buttons button {
+      border-radius: 7px;
+      padding: 0.6rem 2.3rem;
+      background-color: #1649ff; }
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 35rem;
+  width: 100%; }
+  .goals .goal {
+    background-color: #151d31;
+    border-radius: 7px;
+    border: solid 2px #1e2840;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1rem;
+    align-items: center;
+    max-height: 7rem; }
+    .goals .goal h2 {
+      font-weight: bold; }
+    .goals .goal p {
+      line-height: 1.2;
+      text-align: center;
+      font-weight: lighter; }
+
+.markets {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-radius: 7px;
+  border: solid 2px #1e2840;
+  background-color: #151d31;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .markets .market_nav {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .markets .market_items {
+    max-width: 100%;
+    display: table;
+    width: 100%;
+    border-collapse: collapse; }
+    .markets .market_items .market_header,
+    .markets .market_items .market_item {
+      display: table-row; }
+    .markets .market_items .market_header {
+      background-color: #172138;
+      color: white; }
+    .markets .market_items .market_header > *,
+    .markets .market_items .market_item > * {
+      display: table-cell;
+      padding: 0.7rem 1rem;
+      font-size: 0.8rem;
+      height: 100%;
+      /* Set height to 100% */
+      vertical-align: middle; }
+    .markets .market_items .market_item .bold {
+      font-size: 0.9rem;
+      font-weight: bold; }
+    .markets .market_items .market_item .light {
+      font-weight: lighter; }
+    .markets .market_items .market_item .chart-container {
+      width: 100%;
+      max-width: 5rem; }
+      .markets .market_items .market_item .chart-container .green {
+        stroke: #22970f; }
+      .markets .market_items .market_item .chart-container .red {
+        stroke: #b41615; }
+    .markets .market_items .line {
+      fill: none;
+      stroke-width: 2; }
+
+.header2 {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  gap: 2rem; }
+  .header2 * {
+    text-align: center; }
+  .header2 .title {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header2 .title h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 3rem; }
+  .header2 .desc {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    max-width: 700px; }
+  .header2 .buttons {
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem; }
+    .header2 .buttons .grey {
+      background-color: #3c424f; }
+    .header2 .buttons button {
+      border-radius: 7px;
+      padding: 0.6rem 2.3rem;
+      background-color: #1649ff; }
+
+.header3 {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem; }
+  .header3 .image {
+    min-width: 20rem; }
+    .header3 .image img {
+      width: 100%; }
+  .header3 .items {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 2rem; }
+    .header3 .items * {
+      text-align: left; }
+    .header3 .items .title {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: left; }
+      .header3 .items .title h1 {
+        line-height: 1;
+        margin: 0;
+        font-size: 2rem; }
+    .header3 .items .desc {
+      margin: 0 auto;
+      text-align: left;
+      font-weight: lighter;
+      max-width: 700px;
+      font-size: 0.8rem; }
+    .header3 .items .buttons {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      gap: 2rem; }
+      .header3 .items .buttons .grey {
+        background-color: #3c424f; }
+      .header3 .items .buttons button {
+        border-radius: 7px;
+        padding: 0.6rem 2.3rem;
+        background-color: #1649ff; }
+
+.header4 {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #151d31;
+  border: solid 2px #1e2840;
+  padding: 2rem;
+  width: 50rem;
+  gap: 2rem; }
+  .header4 * {
+    text-align: center; }
+  .header4 .title {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header4 .title h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 2rem; }
+  .header4 .desc {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    max-width: 700px; }
+  .header4 .buttons {
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem; }
+    .header4 .buttons .grey {
+      background-color: #3c424f; }
+    .header4 .buttons button {
+      border-radius: 7px;
+      padding: 0.6rem 2.3rem;
+      background-color: #1649ff; }
+
+footer {
+  margin: 0 auto;
+  max-width: 600px; }
+  footer .info {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start; }
+    footer .info .first {
+      gap: 2rem;
+      max-width: 10rem; }
+      footer .info .first p {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        margin-top: 0.5rem; }
+    footer .info div .icons {
+      display: flex;
+      margin: 0.1rem 0;
+      gap: 0.6rem; }
+      footer .info div .icons svg {
+        background: #1e2840;
+        padding: 3px;
+        border-radius: 50%;
+        height: auto;
+        width: 1.5rem;
+        fill: #d3dcff; }
+  footer hr {
+    border: solid 1px #1e2840; }
+  footer .right {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .right h2 {
+      font-weight: lighter;
+      font-size: 0.9rem; }
+    footer .right .terms {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem; }
+      footer .right .terms p {
+        font-size: 0.9rem;
+        font-weight: lighter; }

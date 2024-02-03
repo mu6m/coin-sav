@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = "postgres://ubcqdbyf:gRJMnZnTLe8JDys1DXflLsV-2J1hEg0i@bubble.db.elephantsql.com/ubcqdbyf"
+  relationMode = "prisma"
+}
+
+model post {
+  id String @id @default(cuid())
+
+  slug  String @db.Text
+  title String @db.Text
+
+  description String @db.Text
+  text        String @db.Text
+
+  views Int
+
+  likes    Int
+  dislikes Int
+
+  deleted Boolean @default(false)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt
+
+  tag   tag    @relation(fields: [tagId], references: [id])
+  tagId String
+
+  @@unique([title, tagId])
+  @@index([tagId])
+}
+
+model tag {
+  id    String @id @default(cuid())
+  slug  String @unique
+  name  String @unique
+  posts post[]
+}

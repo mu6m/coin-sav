@@ -1,0 +1,44 @@
+{
+	"private": true,
+	"sideEffects": false,
+	"scripts": {
+		"build": "remix build",
+		"dev": "remix dev",
+		"prebuild": "prisma generate && npm run build:css",
+		"predev": "prisma generate",
+		"typecheck": "tsc",
+		"build:css": "node-sass ./styles -o ./app/styles --output-style compressed",
+		"dev:css": "npm run build:css && node-sass -rw ./styles -o ./app/styles"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.3",
+		"@emotion/styled": "^11.11.0",
+		"@prisma/client": "^4.13.0",
+		"@remix-run/node": "^1.15.0",
+		"@remix-run/react": "^1.15.0",
+		"@remix-run/vercel": "^1.15.0",
+		"@vercel/node": "^2.10.3",
+		"axios": "^1.4.0",
+		"bcryptjs": "^2.4.3",
+		"isbot": "^3.6.8",
+		"marked": "^5.1.0",
+		"node-sass": "^9.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"@remix-run/dev": "^1.15.0",
+		"@remix-run/eslint-config": "^1.15.0",
+		"@remix-run/serve": "^1.15.0",
+		"@types/marked": "^5.0.0",
+		"@types/react": "^18.0.35",
+		"@types/react-dom": "^18.0.11",
+		"eslint": "^8.38.0",
+		"prisma": "^4.13.0",
+		"typescript": "^4.9.5"
+	},
+	"engines": {
+		"node": ">=14"
+	}
+}

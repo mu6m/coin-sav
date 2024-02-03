@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider     = "postgresql"
-  url          = "postgres://ubcqdbyf:gRJMnZnTLe8JDys1DXflLsV-2J1hEg0i@bubble.db.elephantsql.com/ubcqdbyf"
+  url          = "postgres://postgres:postgres@bubble.db.elephantsql.com/postgres"
   relationMode = "prisma"
 }
 
